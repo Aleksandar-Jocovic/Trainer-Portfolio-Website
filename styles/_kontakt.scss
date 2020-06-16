@@ -1,0 +1,284 @@
+.kontaktAside {
+  max-width: 800px;
+  background-color: $mainBackgroun;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 70px;
+  overflow: hidden;
+  border: 1px solid $lightBlue;
+}
+
+section {
+  margin: 20px auto;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  .kontakt-map {
+    display: flex;
+    border-top: 5px solid #485867;
+    border-bottom: 5px solid #485867;
+    border-right: 10px solid #485867;
+    height: fit-content;
+    max-width: 550px;
+    background: #485867;
+
+    .plane {
+      width: 50px;
+      height: 100%;
+      background:  #485867;
+      svg {
+      width: 30px;
+
+      height: 30px;
+      fill:  darken($color: $lightBlueDarken, $amount: 7);
+      margin: 10px;
+      }
+    }
+    img {
+      background-size: cover;
+      background-repeat: repeat;
+    }
+  }
+}
+
+.contact-title {
+  color: $fontNew;
+  text-align: center;
+  text-transform: uppercase;
+  h1{
+    font-size: 25px;
+    line-height: 10px;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+}
+.contact-form {
+  height: min-content;
+  width: 100%;
+  background: darken($color: $lightBlueDarken, $amount: 5);
+
+}
+
+form {
+  // display: flex;
+  // flex-direction: column;
+  height: fit-content;
+  text-align: center;
+  transition: all 4s ease-in-out;
+  position: relative;
+}
+label {
+  color: $fontNew;
+  display: block;
+  position: absolute;
+  left: 30px;
+  -webkit-transform: translate(0px, -50px) scale(1.2);
+  -ms-transform: translate(0px, -50px) scale(1.2);
+  transform: translate(0px, -50px) scale(1.2);
+  transition: 0.5s;
+}
+
+#label-message {
+  color: $fontNew;
+  display: block;
+  position: absolute;
+  left: 30px;
+  -webkit-transform: translate(0px, -230px) scale(1.2);
+  -ms-transform: translate(0px, -230px) scale(1.2);
+  transform: translate(0px, -230px) scale(1.2);
+  transition: 0.5s;
+}
+
+.form-control {
+  height: 25px;
+  width: 90%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid orange;
+  font-size: 18px;
+  margin: 25px auto;
+  text-align: start;
+  color: yellow;  
+  transition: 0.5s;
+}
+
+textarea {
+  height: 200px !important;
+
+}
+
+input {
+  height: 25px;
+  color:orange;
+  transition: 0.5s;
+}
+
+form .submit {  
+  background: #ff5722;
+  border: none;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 40px;
+  margin: 20px auto;
+}
+
+    .plane {
+      width: 50px;
+      height: 100%;
+      background:  #485867;
+      svg {
+      width: 30px;
+
+      height: 30px;
+      fill:  darken($color: $lightBlueDarken, $amount: 7);
+      margin: 10px;
+      }
+    }
+
+form .submit:hover {
+  background-color: #6ff857;
+  cursor: pointer;
+
+}
+@media(max-width: 800px) {
+  section {
+    flex-direction: column;
+    justify-content: center;
+    .info-outer {
+      margin: 20px 0;
+      width: 100%;
+      a p {
+        flex: 1;
+      }
+    }
+    .kontakt-map {
+      max-width: 100%;
+      width: 100%;
+      flex-direction: column;
+      border-left: 10px solid #485867;
+      border-top: none;
+      .plane svg {
+        margin-left: 0;
+      }
+      #kontaktirajte-nas {
+        position: relative;
+        top: -40px;
+        color:  darken($color: $lightBlueDarken, $amount: 7);
+        font-size: 20px;
+      }
+    }
+  }
+}
+.info-outer {
+  min-width: fit-content;
+  min-height: fit-content;
+  width: 100%;
+  display: flex;
+  padding: 5px 10px 5px 0;
+  background: #485867;
+  width: 40%;
+  margin-right: 10px;
+
+    .info-icons {
+      width: 50px;
+      background: #485867;
+      //padding: 10px;
+      svg {
+        margin: 0 10px;
+        margin-top: 10px;
+        width: 30px;
+        height: 30px;
+        fill: darken($color: $lightBlueDarken, $amount: 7);
+
+      }
+      svg:nth-child(1) {
+        margin-top: 10px;
+      }
+      svg:nth-child(2) {
+        margin-top: 14px;
+      }      
+      svg:nth-child(3) {
+        margin-top: 13px;
+      }
+      svg:nth-child(4) {
+        margin-top: 14px;
+      }
+      svg:nth-child(5) {
+        margin-top: 16px;
+      }            
+    }
+
+    .info-info {
+      min-width: fit-content;
+      background: darken($color: $lightBlueDarken, $amount: 5);
+      flex: 1;
+      p {
+        min-width: fit-content;
+        margin: 0 10px;
+        margin-top: 10px;
+        height: 40px; 
+        font-size: 18px; 
+        color: $fontNew
+              
+
+      }
+    }
+}
+
+#input-name:focus,
+#input-name:not(:placeholder-shown)  {
+  border-bottom: 1px solid $vitoOrange;
+}
+
+#input-name:not(:placeholder-shown) ~ #label-name,
+#input-name:focus ~ #label-name {
+  -webkit-transform: translate(-5px, -68px) scale(1);
+  -ms-transform: translate(-5px, -68px) scale(1);
+  transform: translate(-5px, -68px) scale(1);
+  color: $vitoOrange;
+}
+
+#input-email:focus,
+#input-email:not(:placeholder-shown) {
+  border-bottom: 1px solid $vitoOrange;
+}
+
+#input-email:not(:placeholder-shown) ~ #label-email,
+#input-email:focus ~ #label-email {
+  -webkit-transform: translate(-5px, -68px) scale(1);
+  -ms-transform: translate(-5px, -68px) scale(1);
+  transform: translate(-5px, -68px) scale(1);
+  color: $vitoOrange;
+}
+
+textarea:focus {
+  border-bottom: 1px solid $vitoOrange;
+}
+
+textarea:not(:placeholder-shown) ~ #label-message,
+textarea:focus ~ #label-message {
+  -webkit-transform: translate(-5px, -250px) scale(1);
+  -ms-transform: translate(-5px, -250px) scale(1);
+  transform: translate(-5px, -250px) scale(1);
+  color: $vitoOrange;
+}
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: none;
+  -webkit-text-fill-color: yellow;
+  // -webkit-box-shadow: 0 0 0px 1000px #20272f inset;
+  transition: background-color 5000s ease-in-out 0s;
+}

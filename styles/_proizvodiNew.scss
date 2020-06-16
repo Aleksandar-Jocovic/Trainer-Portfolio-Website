@@ -1,0 +1,133 @@
+.sviProizvodi {
+  &.svi-proizvodi-small { 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  grid-gap: 1px;
+  .productVraper {
+    height: 150px;
+  }
+  a {
+    height: 240px;
+    width: 175px;
+  }
+  img {
+    height: 150px;
+  }
+}
+}
+
+.sviProizvodi {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 5px;
+}
+  .galery-element {
+    position: relative;
+    margin: 10px auto;
+    width: 250px;
+    height: 220px;
+    color: $fontNew;
+    text-decoration: none;
+    text-align: center;
+    overflow: hidden;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    .productVraper {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      transition: 0.3s;
+
+    }
+    img {
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      top: 0;
+      margin: 0 auto;
+      transition: all 0.5s ease-in-out;
+      vertical-align: unset;
+      // filter: blur(3px);
+      // transform: scale(1.1);
+    }
+
+  } 
+
+
+.show-on-scroll-img {
+  animation: 1s show-on-scroll-img ease-in forwards;
+}
+
+@keyframes show-on-scroll-img {
+  100% {
+    filter: blur(0);
+    transform: scale(1);
+  }
+}
+
+ .galery-element:hover .productVraper {
+  transform: scale(1.05); 
+
+}
+ .galery-element:hover  .saznajteVise{
+  transform: none;
+  animation: blue-btn 0.4s forwards ease-in-out;
+  animation-delay: 300ms;
+}
+
+@keyframes blue-btn {
+  to {
+    background: $lightBlueDarken;
+  }
+}
+
+.galery-element:hover .saznajteViseBorder{
+  transform: none;
+}
+
+.saznajteVise {
+  position: absolute;
+  width: 140px;
+  height: 50px;
+  top: calc(50% - 25px);
+  left: calc(50% - 70px);
+  line-height: 50px;
+  transform: translate(-200%);
+  font-size: 17px;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  user-select: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  z-index: 4;
+}
+ 
+.saznajteViseBorder {
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  top: calc(50% + 10px);
+  left: calc(50% - 50px);
+  transform: translateX(200%);
+  will-change: transform;
+  background: white;
+  transition: all 0.3s ease-in-out;
+  z-index: 4;
+}
+
+.icon-text {
+  display: flex;
+  svg {
+    height: 10px;
+    width: 10px;
+  }
+}
+
