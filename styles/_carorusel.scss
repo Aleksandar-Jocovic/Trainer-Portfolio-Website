@@ -3,11 +3,12 @@
   width: 48px;
   height: 48px;
   border: none;
-  background: $vitoOrange;
+  background: $mainBackgroun;
   border-radius: 50%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -75%);
+  outline: none;
   z-index: 1;
   svg {
     position: relative;

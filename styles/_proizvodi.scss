@@ -76,213 +76,6 @@
   }
 }
 
-.column {
-  float: left;
-  width: 120px;
-  height: 100px;
-  padding: 5px;
-  overflow: hidden;
-  //border: 1px solid $lightBlueDarken;
-  margin: 5px;
-}
-.column:hover {
-  border: 1px solid #f46517;
-}
-
-/* Style the images inside the grid */
-.column img {
-  width: 100%;
-  height: 100%;
-  opacity: 0.8;
-  cursor: pointer;
-  overflow: hidden;
-}
-
-.column img:hover {
-  opacity: 1;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-/* The expanding image container */
-.containerProduct {
-  background: transparent;
-  //margin-bottom: 20px;
-  margin-right: 10px;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-  //width: 100%;
-  height: 40vh;
-  //max-height: 50vh;
-
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-
-  position: relative;
-  padding: 0;
-  img {
-    object-fit: cover;
-    background-size: cover;
-    width: 100%;
-    //height: 100%;
-    background-position: top;
-    background-size: cover;
-  }
-}
-
-/* Expanding image text */
-#imgtext {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  color: white;
-  font-size: 20px;
-}
-
-/* Closable button inside the expanded image */
-.closebtn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  color: white;
-  font-size: 35px;
-  cursor: pointer;
-  .details {
-    height: fit-content;
-  }
-}
-
-// galery end
-
-.product {
-  /* border-top: 1px solid $lightBlueDarken; */
-  border-bottom: 1px solid $lightBlueDarken;
-
-  margin: 20px auto;
-  padding: 20px 0;
-  display: flex;
-  max-width: 1200px;
-  min-width: fit-content;
-  height: fit-content;
-  //align-items: center;
-  //justify-content: space-between;
-}
-
-.productGalery {
-  width: 50%;
-  max-width: 450px;
-}
-
-.specification {
-  position: relative;
-  width: 300px;
-  margin: 20px 0 0 15%;
-  ul li {
-    list-style: none;
-  }
-}
-
-.discount {
-  position: absolute;
-  top: 0;
-  right: 0px;
-  width: 52px;
-  height: 28px;
-  line-height: 34px;
-  text-align: center;
-  background: #f5f548;
-  .discount-inner-part {
-    position: absolute;
-    bottom: -16px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 16px 26px 0 26px;
-    border-color: #f5f548 transparent transparent transparent;
-  }
-  span {
-    font-size: 19px;
-    font-family: sans-serif;
-    color: $lightBlue;
-    font-weight: bolder;
-  }
-}
-.stars {
-  display: flex;
-  margin-top: 10px;
-  svg {
-    fill: $vitoOrange;
-    width: 17px;
-    height: 17px;
-    margin-right: 5px;
-  }
-}
-
-.price {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  text-align: end;
-  .old-price {
-    font-size: 18px;
-    text-decoration: line-through;
-    line-height: 23px;
-    color: rgb(66, 66, 66);
-    font-family: sans-serif;
-  }
-  .savings {
-    font-size: 15px;
-    color: #fe6732;
-    //line-height: 34px;
-    font-family: sans-serif;
-  }
-  .current-price {
-    margin-top: 10px;
-    font-family: sans-serif;
-    font-size: 32px;
-    letter-spacing: 1px;
-    color: $lightBlueDarken;
-  }
-}
-
-// .productInfo .home-title {
-//   text-align: center;
-//   line-height: 27px;
-// }
-
-.details {
-  box-sizing: border-box;
-  padding: 10px;
-  text-transform: uppercase;
-}
-
-.details h3 {
-  margin: 0;
-  padding: 0;
-  font-size: 20px;
-  text-align: center;
-  line-height: 20px;
-  color: $vitoOrange;
-}
-
-.details h3 span {
-  display: inline;
-  font-size: 16px;
-  color: #283038;
-}
-
-.box a {
-  text-decoration: none;
-  color: inherit;
-}
-
 .adressIcon {
   fill: darkgray;
   height: 18px;
@@ -331,51 +124,17 @@
   height: 70px;
 }
 
-@media screen and (max-width: 800px) {
-  .product {
-    margin: 0;
-    width: 100%;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-
-  .row {
-    .column {
-      margin: 10px 10px 10px 0px;
-      align-self: center;
-    }
-  }
-  .productGalery {
-    width: 100%;
-    align-self: center;
-    position: relative;
-    margin-top: 30px;
-  }
-  .specification {
-    align-self: flex-end;
-    width: 100%;
-  }
-  .price {
-    position: relative;
-  }
-}
 
 @media screen and (max-width: 420px) {
-  .breadcrumb {
-    width: 100%;
-    padding: 10px 0;
+  .owl-carousel .owl-nav button.owl-prev {
+    left: 0px;
+    width: 25px;
+    height: 95px;
   }
-
-  ul.breadcrumb li {
-    a {
-      font-size: 16px;
-    }
-  }
-  .specification {
-    width: 100%;
-    //align-self: flex-start;
-    margin: 15px 0 0 0;
+  .owl-carousel .owl-nav button.owl-next {
+    right: 0px;
+    width: 25px;
+    height: 95px;
   }
 }
 
@@ -386,10 +145,5 @@
 
   .owl-carousel .owl-nav button.owl-prev {
     left: 0;
-  }
-  .containerProduct {
-    height: 40vh;
-    min-height: 300px;
-    width: 100%;
   }
 }

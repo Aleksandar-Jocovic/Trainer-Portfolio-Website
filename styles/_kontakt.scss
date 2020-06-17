@@ -8,7 +8,7 @@
   border: 1px solid $lightBlue;
 }
 
-section {
+.information-and-contact-me {
   margin: 20px auto;
   max-width: 800px;
   display: flex;
@@ -148,7 +148,7 @@ form .submit:hover {
 
 }
 @media(max-width: 800px) {
-  section {
+  .information-and-contact-me {
     flex-direction: column;
     justify-content: center;
     .info-outer {

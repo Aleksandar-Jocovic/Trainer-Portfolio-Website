@@ -1,289 +1,180 @@
 <!DOCTYPE html>
 <html lang="sr">
-  <head>
-    <meta name="description" content="" />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-    <meta name="theme-color" content="#637280" />
-    <!--   <meta name="google-site-verification" content="g1isx0HkgParN-HB1tjVGOHGPROU-i2cBhUIB1P_56g" />
+
+<head>
+  <meta name="description" content="" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#637280" />
+  <!--   <meta name="google-site-verification" content="g1isx0HkgParN-HB1tjVGOHGPROU-i2cBhUIB1P_56g" />
   <meta name="google-site-verification" content="g1isx0HkgParN-HB1tjVGOHGPROU-i2cBhUIB1P_56g" /> -->
 
-    <!-- page title -->
-    <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-    <script src="./assets/owlCarousel/jquery-3.4.1.min.js"></script>
-    <link rel="stylesheet" href="../assets/owlCarousel/owl.carousel.css" />
+  <!-- page title -->
+  <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+  <script src="./assets/owlCarousel/jquery-3.4.1.min.js"></script>
+  <link rel="stylesheet" href="../assets/owlCarousel/owl.carousel.css" />
 
-    <title>Nenad Prokovic | Personal Portfolio</title>
-    <style>
-      * {
-        font-family: 'Abel', sans-serif;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        margin: 0px;
-        padding: 0px;
-      }
+  <title>Nenad Prokovic | Personal Portfolio</title>
+  <style>
+    * {
+      font-family: 'Abel', sans-serif;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      margin: 0px;
+      padding: 0px;
+    }
 
-      body {
-        background-color: #637280;
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        min-width: 250px;
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-      }
+    body {
+      background-color: #637280;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      min-width: 250px;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
 
-      .quickContact {
-        width: 90%;
-        max-width: 1200px;
-        margin: 0 auto;
-        position: relative;
-        top: 30px;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-        background-color: #3a4652;
-        height: 29px;
-        color: whitesmoke;
-        padding: 3.5px 40px 0 40px;
-        border-bottom: 1px solid rgba(255, 252, 252, 0.473);
-      }
+    .quickContact {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+      top: 30px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      background-color: #3a4652;
+      height: 29px;
+      color: whitesmoke;
+      padding: 3.5px 40px 0 40px;
+      border-bottom: 1px solid rgba(255, 252, 252, 0.473);
+    }
 
-      .quickContact p {
-        display: inline;
-        margin: 0;
-      }
+    .quickContact p {
+      display: inline;
+      margin: 0;
+    }
 
-      .quickContact #telefon {
-        margin: 0;
-        color: orange;
-      }
+    .quickContact #telefon {
+      margin: 0;
+      color: orange;
+    }
 
-      .quickContact #gmail {
-        margin: 0;
-        float: right;
-        color: orange;
-      }
+    .quickContact #gmail {
+      margin: 0;
+      float: right;
+      color: orange;
+    }
 
-      .quickContact #gmail a {
-        color: white;
-      }
+    .quickContact #gmail a {
+      color: white;
+    }
 
-      nav {
-        -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0;
-        width: 90%;
-        max-width: 1200px;
-        margin: 0 auto;
-        margin-top: 30px;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
+    nav {
+      -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      margin-top: 30px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      height: 90px;
+      background-color: #3a4652;
+      color: whitesmoke;
+      z-index: 5;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .nav-links {
+      text-transform: uppercase;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      width: 40%;
+      margin: unset;
+      position: absolute;
+      right: 30px;
+    }
+
+    .nav-links li {
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: whitesmoke;
+    }
+
+    /*dodato owo gore*/
+    .nav-links li a:hover {
+      color: #e8491d;
+    }
+
+    .logoImg {
+      position: absolute;
+      height: 70px;
+      width: 160px;
+      left: 20px;
+      background-image: url('../images/logo65.png') no-repeat center center fixed;
+      background-size: cover;
+      -webkit-transition: 0.4s ease-in-out;
+      transition: 0.4s ease-in-out;
+    }
+
+    .logoToHome {
+      position: absolute;
+      height: inherit;
+      width: inherit;
+    }
+
+    .logoImgSmall {
+      position: absolute;
+      left: 20px;
+      background-image: url('../images/logo65.png');
+      background-size: cover;
+      height: 48px;
+      width: 77px;
+      -webkit-transition: 0.4s ease-in-out;
+      transition: 0.4s ease-in-out;
+    }
+
+    .burger {
+      position: absolute;
+      right: 20px;
+      cursor: pointer;
+      display: none;
+    }
+
+    .burger div {
+      background-color: #e2e2e2;
+      height: 3px;
+      margin: 5px;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      width: 25px;
+    }
+
+    @media screen and (max-width: 800px) {
+      .nav-links {
+        z-index: 999;
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: distribute;
-        justify-content: space-around;
-        height: 90px;
         background-color: #3a4652;
-        color: whitesmoke;
-        z-index: 5;
-        background-position: center;
-        background-size: cover;
-      }
-
-      .nav-links {
-        text-transform: uppercase;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: distribute;
-        justify-content: space-around;
-        width: 40%;
-        margin: unset;
-        position: absolute;
-        right: 30px;
-      }
-
-      .nav-links li {
-        list-style: none;
-      }
-
-      .nav-links a {
-        text-decoration: none;
-        color: whitesmoke;
-      }
-
-      /*dodato owo gore*/
-      .nav-links li a:hover {
-        color: #e8491d;
-      }
-
-      .logoImg {
-        position: absolute;
-        height: 70px;
-        width: 160px;
-        left: 20px;
-        background-image: url('../images/logo65.png') no-repeat center center fixed;
-        background-size: cover;
-        -webkit-transition: 0.4s ease-in-out;
-        transition: 0.4s ease-in-out;
-      }
-
-      .logoToHome {
-        position: absolute;
-        height: inherit;
-        width: inherit;
-      }
-
-      .logoImgSmall {
-        position: absolute;
-        left: 20px;
-        background-image: url('../images/logo65.png');
-        background-size: cover;
-        height: 48px;
-        width: 77px;
-        -webkit-transition: 0.4s ease-in-out;
-        transition: 0.4s ease-in-out;
-      }
-
-      .burger {
-        position: absolute;
-        right: 20px;
-        cursor: pointer;
-        display: none;
-      }
-
-      .burger div {
-        background-color: #e2e2e2;
-        height: 3px;
-        margin: 5px;
-        -webkit-transition: all 0.3s ease;
-        transition: all 0.3s ease;
-        width: 25px;
-      }
-
-      @media screen and (max-width: 800px) {
-        .nav-links {
-          z-index: 999;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
-          align-items: center;
-          background-color: #3a4652;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-          flex-direction: column;
-          -webkit-box-pack: space-evenly;
-          -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-          height: 72vh;
-          position: absolute;
-          right: 0px;
-          top: 57px;
-          -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-          -webkit-transition: -webkit-transform 0.2s ease-in;
-          transition: -webkit-transform 0.2s ease-in;
-          transition: transform 0.2s ease-in;
-          transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
-          width: 55%;
-        }
-
-        .nav-links li {
-          opacity: 0;
-        }
-
-        nav,
-        .quickContact {
-          width: 100%;
-        }
-
-        .logoImg {
-          left: 20px;
-          background-image: url('../images/logo65.png');
-          height: 48px;
-          width: 77px;
-        }
-
-        .logoToHome {
-          position: absolute;
-          height: 48px;
-          width: 77px;
-        }
-
-        body {
-          overflow-x: hidden;
-        }
-
-        .quickContact {
-          height: 23px;
-          font-size: 12px;
-          top: 0;
-        }
-
-        .burger {
-          z-index: 5;
-          display: block;
-        }
-
-        #gmail {
-          display: none;
-        }
-      }
-
-      /*  END OF TOOGLE */
-
-      .outer {
-        position: relative;
-        width: 90%;
-        margin: 20px auto;
-        max-width: 1200px;
-        height: 50vh;
-        background: #aaaaaa;
-        overflow: hidden;
-      }
-
-      @media (max-width: 600px) {
-        .outer {
-          height: 70vh;
-        }
-      }
-
-      .inner {
-        position: relative;
-        /* top: 20px; */
-        height: 100%;
-        width: 100%;
-        overflow: hidden;
-        transform: scale(1.1);
-        transition: transform 0.4s;
-        will-change: transform;
-        background: url('../images/ssss.jpg');
-        background-size: cover;
-        background-position-x: left;
-        background-position-y: center;
-        z-index: 0;
-        animation: innerAnim 2s ease forwards;
-      }
-
-      @keyframes innerAnim {
-        to {
-          transform: none;
-        }
-      }
-
-      .home-small-slider {
-        margin: 20px auto;
-        max-width: 800px;
-        background: linear-gradient(#2e3944, #3a4652);
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -291,151 +182,261 @@
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        border-top: 10px solid #4e6070;
-        -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      }
-
-      .part-one,
-      .part-one-fp {
-        width: 60%;
-        margin: 0 auto;
-        height: 20px;
-        position: relative;
-        top: -1px;
-        background-color: #4e6070;
-      }
-
-      .part-one:before {
-        content: '';
-        display: inline-block;
-        position: relative;
-        right: -99.8%;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 20px 20px 0 0;
-        border-color: #4e6070 transparent transparent transparent;
-        z-index: 3;
-      }
-
-      .part-one::after {
-        content: '';
-        display: inline-block;
-        position: relative;
-        left: -39px;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 0 20px 20px 0;
-        border-color: transparent #4e6070 transparent transparent;
-        z-index: 3;
-      }
-
-      .part-two {
-        width: 40%;
-        margin: 0 auto;
-        -webkit-transform: rotateX(180deg);
-        transform: rotateX(180deg);
-        height: 30px;
-        top: 1px;
-      }
-
-      .part-two.part-one:before {
-        border-width: 30px 30px 0 0;
-        right: -99.8%;
-      }
-
-      .part-two.part-one::after {
-        border-width: 0 30px 30px 0;
-        left: -59px;
-      }
-
-      .sliderPart {
-        position: relative;
-        top: -9px;
-        bottom: 0;
-        height: 10px;
-        background: #637280;
-      }
-
-      .sliderPart.part-one:before {
-        border-color: #637280 transparent transparent transparent;
-        border-width: 10px 10px 0 0;
-        top: -6px;
-        right: -100%;
-      }
-
-      .sliderPart.part-one::after {
-        border-width: 0 10px 10px 0;
-        left: -20px;
-        top: -6px;
-        border-color: transparent #637280 transparent transparent;
-      }
-
-      .slider-part-one {
-        z-index: 2;
-        background: #637280;
+        -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
+        height: 72vh;
         position: absolute;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);
-        top: -1px;
+        right: 0px;
+        top: 57px;
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        -webkit-transition: -webkit-transform 0.2s ease-in;
+        transition: -webkit-transform 0.2s ease-in;
+        transition: transform 0.2s ease-in;
+        transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
+        width: 55%;
       }
 
-      .slider-part-one.part-one:before {
-        border-color: #637280 transparent transparent transparent;
-        right: -100%;
+      .nav-links li {
+        opacity: 0;
       }
 
-      .slider-part-one.part-one::after {
-        border-color: transparent #637280 transparent transparent;
-        left: -40px;
+      nav,
+      .quickContact {
+        width: 100%;
       }
-    </style>
 
-    <link rel="shourtcut icon" type="image/png" href="images/logo65.png" />
-    <link rel="stylesheet" type="text/css" href="assets/swiper/swiper.min.css" />
+      .logoImg {
+        left: 20px;
+        background-image: url('../images/logo65.png');
+        height: 48px;
+        width: 77px;
+      }
 
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin /> -->
+      .logoToHome {
+        position: absolute;
+        height: 48px;
+        width: 77px;
+      }
 
-    <link rel="stylesheet" type="text/css" href="styles/style.css" />
-  </head>
+      body {
+        overflow-x: hidden;
+      }
 
-  <body>
+      .quickContact {
+        height: 23px;
+        font-size: 12px;
+        top: 0;
+      }
 
-      <div class="quickContact">
-        <p id="telefon">Tel:</p>
-        <p>065/454-34-34</p>
-        <p id="gmail">Gmail: <a href="mailto:techshop@gmail.com">techshop@gmail.com</a></p>
-      </div>
+      .burger {
+        z-index: 5;
+        display: block;
+      }
 
-      <nav id="nav" class="bigNav">
-        <div class="logoImg" id="logoImgId">
-          <a class="logoToHome" href="index.html"></a>
-        </div>
+      #gmail {
+        display: none;
+      }
+    }
 
-        <ul class="nav-links">
-          <li><a href="#home" id="homeId">home</a></li>
-          <li><a href="#about" id="aboutId">about me</a></li>
-          <li><a href="#gallery" id="galleryId">galery</a></li>
-          <li><a href="#contact" id="contactId">contact</a></li>
-        </ul>
+    /*  END OF TOOGLE */
 
-        <div class="burger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-      </nav>
-          <div id="home" class="itemSpy"></div>
-      <!-- end of navigation menu -->
+    .outer {
+      position: relative;
+      width: 90%;
+      margin: 20px auto;
+      max-width: 1200px;
+      height: 50vh;
+      background: #aaaaaa;
+      overflow: hidden;
+    }
 
-      <!-- home cove img -->
-      <!-- <div class="outer">
+    @media (max-width: 600px) {
+      .outer {
+        height: 70vh;
+      }
+    }
+
+    .inner {
+      position: relative;
+      /* top: 20px; */
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      transform: scale(1.1);
+      transition: transform 0.4s;
+      will-change: transform;
+      background: url('../images/ssss.jpg');
+      background-size: cover;
+      background-position-x: left;
+      background-position-y: center;
+      z-index: 0;
+      animation: innerAnim 2s ease forwards;
+    }
+
+    @keyframes innerAnim {
+      to {
+        transform: none;
+      }
+    }
+
+    .home-small-slider {
+      margin: 20px auto;
+      max-width: 800px;
+      background: linear-gradient(#2e3944, #3a4652);
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      border-top: 10px solid #4e6070;
+      -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .part-one,
+    .part-one-fp {
+      width: 60%;
+      margin: 0 auto;
+      height: 20px;
+      position: relative;
+      top: -1px;
+      background-color: #4e6070;
+    }
+
+    .part-one:before {
+      content: '';
+      display: inline-block;
+      position: relative;
+      right: -99.8%;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 20px 20px 0 0;
+      border-color: #4e6070 transparent transparent transparent;
+      z-index: 3;
+    }
+
+    .part-one::after {
+      content: '';
+      display: inline-block;
+      position: relative;
+      left: -39px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 20px 20px 0;
+      border-color: transparent #4e6070 transparent transparent;
+      z-index: 3;
+    }
+
+    .part-two {
+      width: 40%;
+      margin: 0 auto;
+      -webkit-transform: rotateX(180deg);
+      transform: rotateX(180deg);
+      height: 30px;
+      top: 1px;
+    }
+
+    .part-two.part-one:before {
+      border-width: 30px 30px 0 0;
+      right: -99.8%;
+    }
+
+    .part-two.part-one::after {
+      border-width: 0 30px 30px 0;
+      left: -59px;
+    }
+
+    .sliderPart {
+      position: relative;
+      top: -9px;
+      bottom: 0;
+      height: 10px;
+      background: #637280;
+    }
+
+    .sliderPart.part-one:before {
+      border-color: #637280 transparent transparent transparent;
+      border-width: 10px 10px 0 0;
+      top: -6px;
+      right: -100%;
+    }
+
+    .sliderPart.part-one::after {
+      border-width: 0 10px 10px 0;
+      left: -20px;
+      top: -6px;
+      border-color: transparent #637280 transparent transparent;
+    }
+
+    .slider-part-one {
+      z-index: 2;
+      background: #637280;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      top: -1px;
+    }
+
+    .slider-part-one.part-one:before {
+      border-color: #637280 transparent transparent transparent;
+      right: -100%;
+    }
+
+    .slider-part-one.part-one::after {
+      border-color: transparent #637280 transparent transparent;
+      left: -40px;
+    }
+  </style>
+
+  <link rel="shourtcut icon" type="image/png" href="images/logo65.png" />
+  <link rel="stylesheet" type="text/css" href="assets/swiper/swiper.min.css" />
+
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin /> -->
+
+  <link rel="stylesheet" type="text/css" href="styles/style.css" />
+</head>
+
+<body>
+
+  <div class="quickContact">
+    <p id="telefon">Tel:</p>
+    <p>065/454-34-34</p>
+    <p id="gmail">Gmail: <a href="mailto:techshop@gmail.com">techshop@gmail.com</a></p>
+  </div>
+
+  <nav id="nav" class="bigNav">
+    <div class="logoImg" id="logoImgId">
+      <a class="logoToHome" href="index.html"></a>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#home" id="homeId">home</a></li>
+      <li><a href="#about" id="aboutId">about me</a></li>
+      <li><a href="#gallery" id="galleryId">galery</a></li>
+      <li><a href="#contact" id="contactId">contact</a></li>
+    </ul>
+
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+  <div id="home" class="itemSpy"></div>
+  <!-- end of navigation menu -->
+
+  <!-- home cove img -->
+  <!-- <div class="outer">
         <div class="part-one slider-part-one"></div>
         <div class="inner">
           <div class="slider-box-wraper">
@@ -468,473 +469,495 @@
         </div>
         <div class="part-one part-two sliderPart"></div>
       </div> -->
+  </div>
+  <!-- home cove img end -->
+
+  <!-- <div id="mainContent"> -->
+  <div id="about" class="itemSpy">
+    <div class="home-title big-title">
+      <h4 class="show-on-scroll">about me</h4>
+      <h3 class="show-on-scroll">nenad prokovic</h3>
+      <div class="title-border show-on-scroll"></div>
     </div>
-    <!-- home cove img end -->
 
-    <!-- <div id="mainContent"> -->
-      <div id="about" class="itemSpy">
-        <div class="home-title big-title">
-          <h4 class="show-on-scroll">about me</h4>
-          <h3 class="show-on-scroll">nenad prokovic</h3>
-          <div class="title-border show-on-scroll"></div>
-        </div>
-
-        <div class="home-small-slider fancy-paragraf">
-          <div class="part-one"></div>
-          <div class="summary">
-            <h1 id="smallTxt" class="show-on-scroll">
-              An passionate and skilled trainer with more than 10+ years of experience, committed on delivering fun, energetic, and addictive training routines for students, personalized to their specific physical and personal needs. Possess a bachelor degree in sport and physical education. Continually seeking new knowledge and techniques to improve students experience.
-            </h1>
-          </div>
-
-          <div class="work-education">
-            <div class="education-and-personal-info">
-              <div class="personal-info">
-                <div class="about-me-header">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm7.753 18.305c-.261-.586-.789-.991-1.871-1.241-2.293-.529-4.428-.993-3.393-2.945 3.145-5.942.833-9.119-2.489-9.119-3.388 0-5.644 3.299-2.489 9.119 1.066 1.964-1.148 2.427-3.393 2.945-1.084.25-1.608.658-1.867 1.246-1.405-1.723-2.251-3.919-2.251-6.31 0-5.514 4.486-10 10-10s10 4.486 10 10c0 2.389-.845 4.583-2.247 6.305z" />
-                  </svg>
-                  <h2>Personal Information</h2>
-                </div>
-                <div class="image-info">
-                  <img src="./images/rip.jpg" alt="" />
-                  <ul>
-                    <li>Brthday: 16.01.1990</li>
-                    <li>Gender: Male</li>
-                    <li>Nationality: Serbian</li>
-                    <li>Lenguages:</li>
-                    <li>Serbian <span class="leng-bar"></span></li>
-                    <li>English <span class="leng-bar leng-bar-eng"></span></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="education">
-                <div class="vertical-line"></div>
-                <div class="about-me-header">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path d="M20 12.875v5.068c0 2.754-5.789 4.057-9 4.057-3.052 0-9-1.392-9-4.057v-6.294l9 4.863 9-3.637zm-8.083-10.875l-12.917 5.75 12 6.5 11-4.417v7.167h2v-8.25l-12.083-6.75zm13.083 20h-4c.578-1 1-2.5 1-4h2c0 1.516.391 2.859 1 4z" />
-                  </svg>
-                  <h2>Education</h2>
-                </div>
-                <div class="education-item">
-                  <svg height="15" width="15">
-                    <circle cx="7.5" cy="7.5" r="5.5" stroke="#898b8d" stroke-width="2" fill="#2e3944" />
-                  </svg>
-                  <h3>Faculty of Sport and Phisical Education</h3>
-                  <h5>&#8226; Phisical Education Profesor &#8226;<span>Oct, 2010 - Jan, 2016</span></h5>
-                </div>
-                <div class="education-item">
-                  <svg height="15" width="15">
-                    <circle cx="7.5" cy="7.5" r="5.5" stroke="#898b8d" stroke-width="2" fill="#2e3944" />
-                  </svg>
-                  <div class="vertical-line-mask"></div>
-
-                  <h3>High school of electrical engineering "Tehnička škola" Čačak Serbia</h3>
-                  <h5>&#8226; Computer technician &#8226;<span>Sep, 2006 - Jun, 2010</span></h5>
-                </div>
-              </div>
-            </div>
-
-            <div class="work">
-              <div class="vertical-line"></div>
-              <div class="about-me-header">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                  <path
-                    d="M24 13.616v-3.232c-1.651-.587-2.694-.752-3.219-2.019v-.001c-.527-1.271.1-2.134.847-3.707l-2.285-2.285c-1.561.742-2.433 1.375-3.707.847h-.001c-1.269-.526-1.435-1.576-2.019-3.219h-3.232c-.582 1.635-.749 2.692-2.019 3.219h-.001c-1.271.528-2.132-.098-3.707-.847l-2.285 2.285c.745 1.568 1.375 2.434.847 3.707-.527 1.271-1.584 1.438-3.219 2.02v3.232c1.632.58 2.692.749 3.219 2.019.53 1.282-.114 2.166-.847 3.707l2.285 2.286c1.562-.743 2.434-1.375 3.707-.847h.001c1.27.526 1.436 1.579 2.019 3.219h3.232c.582-1.636.75-2.69 2.027-3.222h.001c1.262-.524 2.12.101 3.698.851l2.285-2.286c-.744-1.563-1.375-2.433-.848-3.706.527-1.271 1.588-1.44 3.221-2.021zm-12 2.384c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4z"
-                  />
-                </svg>
-                <h2>Wrok Experiance</h2>
-              </div>
-
-              <div class="work-item">
-                <svg height="15" width="15">
-                  <circle cx="7.5" cy="7.5" r="5.5" stroke="#898b8d" stroke-width="2" fill="#2e3944" />
-                </svg>
-                <h3>Acrobatic Club "Vertigo", Cačak Serbia</h3>
-                <h5>&#8226; Personal Trainer & CEO &#8226;<span>Aug, 2019 - till now</span></h5>
-                <p>-I opened a small acrobatic gym in my hometown, where I am working as a trainer for kids and adults</p>
-              </div>
-
-              <div class="work-item">
-                <svg height="15" width="15">
-                  <circle cx="7.5" cy="7.5" r="5.5" stroke="#898b8d" stroke-width="2" fill="#2e3944" />
-                </svg>
-                <h3>Sports Center "Bounce INC", Qatar Doha</h3>
-                <h5>&#8226; Head coach &#8226;<span>Jul, 2017 - Aug, 2019</span></h5>
-                <p>- As a head coach, I had the obligation to supervise other coaches, help them create new trainings for groups or individuals, work in the office arranging training timings, contacting students over the phone, checking the payments, arranging new prices and discounts for classes and camps, going to schools and other institutions to promote our classes, organize competitions in several sports.</p>
-              </div>
-
-              <div class="work-item">
-                <svg height="15" width="15">
-                  <circle cx="7.5" cy="7.5" r="5.5" stroke="#898b8d" stroke-width="2" fill="#2e3944" />
-                </svg>
-                <h3>Sports Center "Bounce INC", Abu Dhabi UAE</h3>
-                <h5>&#8226; Gymnastics & extreme sports coach &#8226;<span>May, 2016 - Jul, 2017</span></h5>
-                <p>- Trained toddler to pensioner beginner, intermediate and advanced skills in trampolining, tumbling, tricking, parkour, free running & street workout.</p>
-              </div>
-
-              <div class="work-item">
-                <svg height="15" width="15">
-                  <circle cx="7.5" cy="7.5" r="5.5" stroke="#898b8d" stroke-width="2" fill="#2e3944" />
-                </svg>
-                <h3>Acrobatic Club "Urban Sport Brothers", Niš Serbia</h3>
-                <h5>&#8226; Acrobatic Trainer &#8226;<span>May, 2011 - May, 2016</span></h5>
-                <p>- After reaching the finals in "Serbs Got Talent Show ", with the acrobatic group "Urban sport Brothers", I and a couple of friends from the group founded the acrobatic club "Urban Sport Brothers", where I worked as an acrobatics coach for all ages. Also, I was a performer for that club. We visited over 20 countries in Europe and the Middle East doing parts in movies, music videos, commercials, shows, festivals, etc.</p>
-              </div>
-
-              <div class="work-item">
-                <svg height="15" width="15">
-                  <circle cx="7.5" cy="7.5" r="5.5" stroke="#898b8d" stroke-width="2" fill="#2e3944" />
-                </svg>
-                <div class="vertical-line-mask"></div>
-                <h3>Gymnastics Club "Niš", Niš Serbia</h3>
-                <h5>&#8226; Gymnastic Trainer &#8226;<span>Oct, 2010 - May, 2011</span></h5>
-                <p>- I worked as a coach, where I was introducing children to gymnastics</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="part-one part-two"></div>
-        </div>
+    <div class="home-small-slider fancy-paragraf">
+      <div class="part-one"></div>
+      <div class="summary">
+        <h1 id="smallTxt" class="show-on-scroll">
+          An passionate and skilled trainer with more than 10+ years of experience, committed on delivering fun,
+          energetic, and addictive training routines for students, personalized to their specific physical and personal
+          needs. Possess a bachelor degree in sport and physical education. Continually seeking new knowledge and
+          techniques to improve students experience.
+        </h1>
       </div>
 
-      <!-- galery start -->
-      <div id="gallery" class="itemSpy">
-        <aside class="aside">
-          <div class="home-title">
-            <h4 class="show-on-scroll">check out</h4>
-            <h3 class="show-on-scroll">vieos of me preforming</h3>
-            <div class="title-border show-on-scroll"></div>
-          </div>
-          <!-- Swiper -->
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div>
-                  <div class="imgBx">
-                    <video id="video1" width="300" height="250" poster="images/cover.jpg">
-                      <source src="./videos/smoke.mp4" type="video/mp4" />
-                    </video>
-                    <button class="play-button" name='1'>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z" />
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="details-swiper">
-                    <h3>assus<br /><span>ZenBook</span></h3>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div>
-                  <div class="imgBx">
-                    <video id="video2" width="300" height="250" poster="images/cover.jpg">
-                      <source src="./videos/smoke.mp4" type="video/mp4" />
-                    </video>
-                    <button class="play-button" name="2">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z" />
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="details-swiper">
-                    <h3>assus<br /><span>ZenBook</span></h3>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div>
-                  <div class="imgBx">
-                    <video id="video3" width="300" height="250" poster="images/img3.jpg">
-                      <source src="./videos/smoke.mp4" type="video/mp4" />
-                    </video>
-                    <button class="play-button" name="3">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z" />
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="details-swiper">
-                    <h3>assus<br /><span>ZenBook</span></h3>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div>
-                  <div class="imgBx">
-                    <video id="video4" width="300" height="250" poster="images/img1.jpg">
-                      <source src="./videos/smoke.mp4" type="video/mp4" />
-                    </video>
-                    <button class="play-button" name="4">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z" />
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="details-swiper">
-                    <h3>assus<br /><span>ZenBook</span></h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-          </div>
-          <script type="text/javascript" src="assets/swiper/swiper.min.js"></script>
-
-          <!-- Initialize Swiper -->
-          <script>
-            var swiper = new Swiper('.swiper-container', {
-              effect: 'coverflow',
-              grabCursor: true,
-              centeredSlides: true,
-              slidesPerView: 'auto',
-              coverflowEffect: {
-                rotate: 60,
-                stretch: 6,
-                depth: 60,
-                modifier: 5,
-                slideShadows: true,
-              },
-              pagination: {
-                el: '.swiper-pagination',
-              },
-            });
-
-            const play = document.querySelectorAll('.play-button');
-
-            const playVideo = (e) => {
-              const index = e.target.name;
-              const btnIndex = index - 1;
-              const video = document.getElementById(`video${index}`);
-              video.setAttribute('controls', 'controls');
-              video.autoplay = 'true';
-              video.load();
-              video.removeAttribute('poster');
-              play[btnIndex].style.display = 'none';
-            };
-            play.forEach(item => item.addEventListener('click', playVideo))
-          </script>
-        </aside>
-
-        <div id="full-img-outer">
-          <div id="full-img">
-            <button class="full-img-close-button">
-              <svg width="24" height="24">
-                <line x1="2" y1="2" x2="22" y2="22" style="stroke-width: 4;" />
-                <line x1="2" y1="22" x2="22" y2="2" style="stroke-width: 4;" />
+      <div class="work-education">
+        <div class="education-and-personal-info">
+          <div class="personal-info">
+            <div class="about-me-header">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path
+                  d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm7.753 18.305c-.261-.586-.789-.991-1.871-1.241-2.293-.529-4.428-.993-3.393-2.945 3.145-5.942.833-9.119-2.489-9.119-3.388 0-5.644 3.299-2.489 9.119 1.066 1.964-1.148 2.427-3.393 2.945-1.084.25-1.608.658-1.867 1.246-1.405-1.723-2.251-3.919-2.251-6.31 0-5.514 4.486-10 10-10s10 4.486 10 10c0 2.389-.845 4.583-2.247 6.305z" />
               </svg>
-            </button>
+              <h2>Personal Information</h2>
+            </div>
+            <div class="image-info">
+              <img src="./images/rip.jpg" alt="" />
+              <ul>
+                <li>Brthday: 16.01.1990</li>
+                <li>Gender: Male</li>
+                <li>Nationality: Serbian</li>
+                <li>Lenguages:</li>
+                <li>Serbian <span class="leng-bar"></span></li>
+                <li>English <span class="leng-bar leng-bar-eng"></span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="education">
+            <div class="vertical-line"></div>
+            <div class="about-me-header">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path
+                  d="M20 12.875v5.068c0 2.754-5.789 4.057-9 4.057-3.052 0-9-1.392-9-4.057v-6.294l9 4.863 9-3.637zm-8.083-10.875l-12.917 5.75 12 6.5 11-4.417v7.167h2v-8.25l-12.083-6.75zm13.083 20h-4c.578-1 1-2.5 1-4h2c0 1.516.391 2.859 1 4z" />
+              </svg>
+              <h2>Education</h2>
+            </div>
+            <div class="education-item">
+              <svg height="15" width="15">
+                <circle cx="7.5" cy="7.5" r="5.5" stroke="#898b8d" stroke-width="2" fill="#2e3944" />
+              </svg>
+              <h3>Faculty of Sport and Phisical Education</h3>
+              <h5>&#8226; Phisical Education Profesor &#8226;<span>Oct, 2010 - Jan, 2016</span></h5>
+            </div>
+            <div class="education-item">
+              <svg height="15" width="15">
+                <circle cx="7.5" cy="7.5" r="5.5" stroke="#898b8d" stroke-width="2" fill="#2e3944" />
+              </svg>
+              <div class="vertical-line-mask"></div>
+
+              <h3>High school of electrical engineering "Tehnička škola" Čačak Serbia</h3>
+              <h5>&#8226; Computer technician &#8226;<span>Sep, 2006 - Jun, 2010</span></h5>
+            </div>
           </div>
         </div>
 
-        <!-- images galery start -->
-        <div class="home-title">
-          <h4 class="show-on-scroll">check out</h4>
-          <h3 class="show-on-scroll">image galery</h3>
-          <div class="title-border show-on-scroll"></div>
-        </div>
-        <div class="home-small-slider">
-          <div class="part-one"></div>
-
-          <div class="small-slider">
-            <!--  owl carousel -->
-            <div class="parent-box owl-carousel">
-              <div class="box">
-                <div class="galery-element">
-                  <div class="productVraper">
-                    <img src="images/img1.jpg" alt="apple macbook" class="imgA" />
-                  </div>
-                  <button class="saznajteVise" name="2">FULL IMAGE</button>
-                  <h3 class="saznajteViseBorder"></h3>
-                </div>
-              </div>
-              <div class="box">
-                <div class="galery-element">
-                  <div class="productVraper">
-                    <img src="images/img2.jpg" alt="apple macbook" class="imgA" />
-                  </div>
-                  <button class="saznajteVise" name="2">FULL IMAGE</button>
-                  <h3 class="saznajteViseBorder"></h3>
-                </div>
-              </div>
-
-              <div class="box">
-                <div class="galery-element">
-                  <div class="productVraper">
-                    <img src="images/img3.jpg" alt="apple macbook" class="imgA" />
-                  </div>
-                  <button class="saznajteVise" name="3">FULL IMAGE</button>
-                  <h3 class="saznajteViseBorder"></h3>
-                </div>
-              </div>
-              <div class="box">
-                <div class="galery-element">
-                  <div class="productVraper">
-                    <img src="images/img4.jpg" alt="apple macbook" class="imgA" />
-                  </div>
-                  <button class="saznajteVise" name="4">FULL IMAGE</button>
-                  <h3 class="saznajteViseBorder"></h3>
-                </div>
-              </div>
-
-              <div class="box">
-                <div class="galery-element">
-                  <div class="productVraper">
-                    <img src="images/img5.jpg" alt="apple macbook" class="imgA" />
-                  </div>
-                  <button class="saznajteVise" name="5">FULL IMAGE</button>
-                  <h3 class="saznajteViseBorder"></h3>
-                </div>
-              </div>
-            </div>
-            <!-- owl carousel end -->
-            <!-- owl carousel -->
-            <div class="parent-box owl-carousel">
-              <div class="box">
-                <div class="galery-element">
-                  <div class="productVraper">
-                    <img src="images/img1.jpg" alt="apple macbook" class="imgA" />
-                  </div>
-                  <button class="saznajteVise" name="1">FULL IMAGE</button>
-                  <h3 class="saznajteViseBorder"></h3>
-                </div>
-              </div>
-              <div class="box">
-                <div class="galery-element">
-                  <div class="productVraper">
-                    <img src="images/img2.jpg" alt="apple macbook" class="imgA" />
-                  </div>
-                  <button class="saznajteVise" name="2">FULL IMAGE</button>
-                  <h3 class="saznajteViseBorder"></h3>
-                </div>
-              </div>
-
-              <div class="box">
-                <div class="galery-element">
-                  <div class="productVraper">
-                    <img src="images/img3.jpg" alt="apple macbook" class="imgA" />
-                  </div>
-                  <button class="saznajteVise" name="3">FULL IMAGE</button>
-                  <h3 class="saznajteViseBorder"></h3>
-                </div>
-              </div>
-              <div class="box">
-                <div class="galery-element">
-                  <div class="productVraper">
-                    <img src="images/img4.jpg" alt="apple macbook" class="imgA" />
-                  </div>
-                  <button class="saznajteVise" name="4">FULL IMAGE</button>
-                  <h3 class="saznajteViseBorder"></h3>
-                </div>
-              </div>
-
-              <div class="box">
-                <div class="galery-element">
-                  <div class="productVraper">
-                    <img src="images/img5.jpg" alt="apple macbook" class="imgA" />
-                  </div>
-                  <button class="saznajteVise" name="5">FULL IMAGE</button>
-                  <h3 class="saznajteViseBorder"></h3>
-                </div>
-              </div>
-
-              <div class="box">
-                <div class="galery-element">
-                  <div class="productVraper">
-                    <img src="images/img5.jpg" alt="apple macbook" class="imgA" />
-                  </div>
-                  <button class="saznajteVise" name="5">FULL IMAGE</button>
-                  <h3 class="saznajteViseBorder"></h3>
-                </div>
-              </div>
-            </div>
-            <!-- owl carousel end -->
+        <div class="work">
+          <div class="vertical-line"></div>
+          <div class="about-me-header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path
+                d="M24 13.616v-3.232c-1.651-.587-2.694-.752-3.219-2.019v-.001c-.527-1.271.1-2.134.847-3.707l-2.285-2.285c-1.561.742-2.433 1.375-3.707.847h-.001c-1.269-.526-1.435-1.576-2.019-3.219h-3.232c-.582 1.635-.749 2.692-2.019 3.219h-.001c-1.271.528-2.132-.098-3.707-.847l-2.285 2.285c.745 1.568 1.375 2.434.847 3.707-.527 1.271-1.584 1.438-3.219 2.02v3.232c1.632.58 2.692.749 3.219 2.019.53 1.282-.114 2.166-.847 3.707l2.285 2.286c1.562-.743 2.434-1.375 3.707-.847h.001c1.27.526 1.436 1.579 2.019 3.219h3.232c.582-1.636.75-2.69 2.027-3.222h.001c1.262-.524 2.12.101 3.698.851l2.285-2.286c-.744-1.563-1.375-2.433-.848-3.706.527-1.271 1.588-1.44 3.221-2.021zm-12 2.384c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4z" />
+            </svg>
+            <h2>Wrok Experiance</h2>
           </div>
 
-          <div class="part-one part-two"></div>
+          <div class="work-item">
+            <svg height="15" width="15">
+              <circle cx="7.5" cy="7.5" r="5.5" stroke="#898b8d" stroke-width="2" fill="#2e3944" />
+            </svg>
+            <h3>Acrobatic Club "Vertigo", Čačak Serbia</h3>
+            <h5>&#8226; Personal Trainer & CEO &#8226;<span>Aug, 2019 - till now</span></h5>
+            <p>-I opened a small acrobatic gym in my hometown, where I am working as a trainer for kids and adults.</p>
+          </div>
+
+          <div class="work-item">
+            <svg height="15" width="15">
+              <circle cx="7.5" cy="7.5" r="5.5" stroke="#898b8d" stroke-width="2" fill="#2e3944" />
+            </svg>
+            <h3>Sports Center "Bounce INC", Qatar Doha</h3>
+            <h5>&#8226; Head coach &#8226;<span>Jul, 2017 - Aug, 2019</span></h5>
+            <p>- As a head coach, I had the obligation to supervise other coaches, help them create new trainings for
+              groups or individuals, work in the office arranging training timings, contacting students over the phone,
+              checking the payments, arranging new prices and discounts for classes and camps, going to schools and
+              other institutions to promote our classes, organize competitions in several sports.</p>
+          </div>
+
+          <div class="work-item">
+            <svg height="15" width="15">
+              <circle cx="7.5" cy="7.5" r="5.5" stroke="#898b8d" stroke-width="2" fill="#2e3944" />
+            </svg>
+            <h3>Sports Center "Bounce INC", Abu Dhabi UAE</h3>
+            <h5>&#8226; Gymnastics & extreme sports coach &#8226;<span>May, 2016 - Jul, 2017</span></h5>
+            <p>- Trained toddler to pensioner beginner, intermediate and advanced skills in trampolining, tumbling,
+              tricking, parkour, free running & street workout.</p>
+          </div>
+
+          <div class="work-item">
+            <svg height="15" width="15">
+              <circle cx="7.5" cy="7.5" r="5.5" stroke="#898b8d" stroke-width="2" fill="#2e3944" />
+            </svg>
+            <h3>Acrobatic Club "Urban Sport Brothers", Niš Serbia</h3>
+            <h5>&#8226; Acrobatic Trainer &#8226;<span>May, 2011 - May, 2016</span></h5>
+            <p>- After reaching the finals in "Serbs Got Talent Show ", with the acrobatic group "Urban sport Brothers",
+              I and a couple of friends from the group founded the acrobatic club "Urban Sport Brothers", where I worked
+              as an acrobatics coach for all ages. Also, I was a performer for that club. We visited over 20 countries
+              in Europe and the Middle East doing parts in movies, music videos, commercials, shows, festivals, etc.</p>
+          </div>
+
+          <div class="work-item">
+            <svg height="15" width="15">
+              <circle cx="7.5" cy="7.5" r="5.5" stroke="#898b8d" stroke-width="2" fill="#2e3944" />
+            </svg>
+            <div class="vertical-line-mask"></div>
+            <h3>Gymnastics Club "Niš", Niš Serbia</h3>
+            <h5>&#8226; Gymnastic Trainer &#8226;<span>Oct, 2010 - May, 2011</span></h5>
+            <p>- I worked as a coach, where I was introducing children to gymnastics.</p>
+          </div>
         </div>
-        <!-- images galery end -->
       </div>
-      <!-- galery end -->
+
+      <div class="part-one part-two"></div>
+    </div>
+  </div>
+
+  <!-- galery start -->
+  <div id="gallery" class="itemSpy">
+    <aside class="aside">
       <div class="home-title">
-        <h4 class="show-on-scroll">contact</h4>
-        <h3 class="show-on-scroll">this is how you can contact me</h3>
+        <h4 class="show-on-scroll">check out</h4>
+        <h3 class="show-on-scroll">vieos of me preforming</h3>
         <div class="title-border show-on-scroll"></div>
       </div>
-      <section id="contact" class="itemSpy">
-        <!--test -->
-        <div class="info-outer">
-          <div class="info-icons">
-            <svg class="adressIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-              <path d="M12 12.713l-11.985-9.713h23.971l-11.986 9.713zm-5.425-1.822l-6.575-5.329v12.501l6.575-7.172zm10.85 0l6.575 7.172v-12.501l-6.575 5.329zm-1.557 1.261l-3.868 3.135-3.868-3.135-8.11 8.848h23.956l-8.11-8.848z" />
-            </svg>
-
-            <svg class="adressIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-              <path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z" />
-            </svg>
-
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-              <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3.445 17.827c-3.684 1.684-9.401-9.43-5.8-11.308l1.053-.519 1.746 3.409-1.042.513c-1.095.587 1.185 5.04 2.305 4.497l1.032-.505 1.76 3.397-1.054.516z" />
-            </svg>
-
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
-              <path
-                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
-              />
-            </svg>
-
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
-              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-3 7h-1.924c-.615 0-1.076.252-1.076.889v1.111h3l-.238 3h-2.762v8h-3v-8h-2v-3h2v-1.923c0-2.022 1.064-3.077 3.461-3.077h2.539v3z" />
-            </svg>
-          </div>
-          <div class="info-info">
-            <p>&nbsptechshop@gmail.com</p>
-            <p>Nasa Adresa 3220</p>
-            <p>+38164/ 34 34 34</p>
-            <p>tech shop</p>
-            <p>tech shop</p>
-          </div>
-        </div>
-        <!-- //test end -->
-
-        <div class="kontakt-map">
-          <div class="plane">
-            <svg class="fill" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-              <path d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z" />
-            </svg>
-          </div>
-
-          <div class="contact-form">
-            <div class="contact-title">
-              <p id="kontaktirajte-nas">contact me</p>
-              <h2>if you have any questions please send a message</h2>
+      <!-- Swiper -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div>
+              <div class="imgBx">
+                <video id="video1" width="300" height="250" poster="images/cover.jpg">
+                  <source src="./videos/smoke.mp4" type="video/mp4" />
+                </video>
+                <button class="play-button" name='1'>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                      d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z" />
+                  </svg>
+                </button>
+              </div>
+              <div class="details-swiper">
+                <h3>assus<br /><span>ZenBook</span></h3>
+              </div>
             </div>
+          </div>
 
-            <form id="contact-form" netlify>
-              <input id="input-name" name="name" type="text" class="form-control" placeholder=" " required />
-              <label id="label-name">Your Name</label>
-
-              <input id="input-email" name="emial" type="email" class="form-control" placeholder=" " required />
-              <label id="label-email">Your Email</label>
-              <br />
-              <textarea name="message" class="form-control" placeholder=" " cols="60" rows="10" required></textarea><br />
-              <label id="label-message">Your Message</label>
-
-              <input type="submit" class="form-control submit" value="SEND" />
-            </form>
+          <div class="swiper-slide">
+            <div>
+              <div class="imgBx">
+                <video id="video2" width="300" height="250" poster="images/cover.jpg">
+                  <source src="./videos/smoke.mp4" type="video/mp4" />
+                </video>
+                <button class="play-button" name="2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                      d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z" />
+                  </svg>
+                </button>
+              </div>
+              <div class="details-swiper">
+                <h3>assus<br /><span>ZenBook</span></h3>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <div class="imgBx">
+                <video id="video3" width="300" height="250" poster="images/img3.jpg">
+                  <source src="./videos/smoke.mp4" type="video/mp4" />
+                </video>
+                <button class="play-button" name="3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                      d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z" />
+                  </svg>
+                </button>
+              </div>
+              <div class="details-swiper">
+                <h3>assus<br /><span>ZenBook</span></h3>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <div class="imgBx">
+                <video id="video4" width="300" height="250" poster="images/img1.jpg">
+                  <source src="./videos/smoke.mp4" type="video/mp4" />
+                </video>
+                <button class="play-button" name="4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                      d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z" />
+                  </svg>
+                </button>
+              </div>
+              <div class="details-swiper">
+                <h3>assus<br /><span>ZenBook</span></h3>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
-    <!-- </div> -->
-    <!-- main content end -->
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+      <script type="text/javascript" src="assets/swiper/swiper.min.js"></script>
 
-    <button id="back-to-top-btn">&#10094;</button>
-    <footer>
-      <!--icons-->
-      <!-- <div id="icons-vraper">
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 60,
+            stretch: 6,
+            depth: 60,
+            modifier: 5,
+            slideShadows: true,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+          },
+        });
+
+        const play = document.querySelectorAll('.play-button');
+
+        const playVideo = (e) => {
+          const index = e.target.name;
+          const btnIndex = index - 1;
+          const video = document.getElementById(`video${index}`);
+          video.setAttribute('controls', 'controls');
+          video.autoplay = 'true';
+          video.load();
+          video.removeAttribute('poster');
+          play[btnIndex].style.display = 'none';
+        };
+        play.forEach(item => item.addEventListener('click', playVideo))
+      </script>
+    </aside>
+
+    <div id="full-img-outer">
+      <div id="full-img">
+        <button class="full-img-close-button">
+          <svg width="24" height="24">
+            <line x1="2" y1="2" x2="22" y2="22" style="stroke-width: 4;" />
+            <line x1="2" y1="22" x2="22" y2="2" style="stroke-width: 4;" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- images galery start -->
+    <div class="home-title">
+      <h4 class="show-on-scroll">check out</h4>
+      <h3 class="show-on-scroll">image galery</h3>
+      <div class="title-border show-on-scroll"></div>
+    </div>
+    <div class="home-small-slider">
+      <div class="part-one"></div>
+
+      <div class="small-slider">
+        <!--  owl carousel -->
+        <div class="parent-box owl-carousel">
+          <div class="box">
+            <div class="galery-element">
+              <div class="productVraper">
+                <img src="images/img1.jpg" alt="apple macbook" class="imgA" />
+              </div>
+              <button class="saznajteVise" name="2">FULL IMAGE</button>
+              <h3 class="saznajteViseBorder"></h3>
+            </div>
+          </div>
+          <div class="box">
+            <div class="galery-element">
+              <div class="productVraper">
+                <img src="images/img2.jpg" alt="apple macbook" class="imgA" />
+              </div>
+              <button class="saznajteVise" name="2">FULL IMAGE</button>
+              <h3 class="saznajteViseBorder"></h3>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="galery-element">
+              <div class="productVraper">
+                <img src="images/img3.jpg" alt="apple macbook" class="imgA" />
+              </div>
+              <button class="saznajteVise" name="3">FULL IMAGE</button>
+              <h3 class="saznajteViseBorder"></h3>
+            </div>
+          </div>
+          <div class="box">
+            <div class="galery-element">
+              <div class="productVraper">
+                <img src="images/img4.jpg" alt="apple macbook" class="imgA" />
+              </div>
+              <button class="saznajteVise" name="4">FULL IMAGE</button>
+              <h3 class="saznajteViseBorder"></h3>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="galery-element">
+              <div class="productVraper">
+                <img src="images/img5.jpg" alt="apple macbook" class="imgA" />
+              </div>
+              <button class="saznajteVise" name="5">FULL IMAGE</button>
+              <h3 class="saznajteViseBorder"></h3>
+            </div>
+          </div>
+        </div>
+        <!-- owl carousel end -->
+        <!-- owl carousel -->
+        <div class="parent-box owl-carousel">
+          <div class="box">
+            <div class="galery-element">
+              <div class="productVraper">
+                <img src="images/img1.jpg" alt="apple macbook" class="imgA" />
+              </div>
+              <button class="saznajteVise" name="1">FULL IMAGE</button>
+              <h3 class="saznajteViseBorder"></h3>
+            </div>
+          </div>
+          <div class="box">
+            <div class="galery-element">
+              <div class="productVraper">
+                <img src="images/img2.jpg" alt="apple macbook" class="imgA" />
+              </div>
+              <button class="saznajteVise" name="2">FULL IMAGE</button>
+              <h3 class="saznajteViseBorder"></h3>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="galery-element">
+              <div class="productVraper">
+                <img src="images/img3.jpg" alt="apple macbook" class="imgA" />
+              </div>
+              <button class="saznajteVise" name="3">FULL IMAGE</button>
+              <h3 class="saznajteViseBorder"></h3>
+            </div>
+          </div>
+          <div class="box">
+            <div class="galery-element">
+              <div class="productVraper">
+                <img src="images/img4.jpg" alt="apple macbook" class="imgA" />
+              </div>
+              <button class="saznajteVise" name="4">FULL IMAGE</button>
+              <h3 class="saznajteViseBorder"></h3>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="galery-element">
+              <div class="productVraper">
+                <img src="images/img5.jpg" alt="apple macbook" class="imgA" />
+              </div>
+              <button class="saznajteVise" name="5">FULL IMAGE</button>
+              <h3 class="saznajteViseBorder"></h3>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="galery-element">
+              <div class="productVraper">
+                <img src="images/img5.jpg" alt="apple macbook" class="imgA" />
+              </div>
+              <button class="saznajteVise" name="5">FULL IMAGE</button>
+              <h3 class="saznajteViseBorder"></h3>
+            </div>
+          </div>
+        </div>
+        <!-- owl carousel end -->
+      </div>
+
+      <div class="part-one part-two"></div>
+    </div>
+    <!-- images galery end -->
+  </div>
+  <!-- galery end -->
+
+  <section id="contact" class="itemSpy">
+    <div class="home-title">
+      <h4 class="show-on-scroll">contact</h4>
+      <h3 class="show-on-scroll">this is how you can contact me</h3>
+      <div class="title-border show-on-scroll"></div>
+    </div>
+    <div class="information-and-contact-me">
+      <!--test -->
+      <div class="info-outer">
+        <div class="info-icons">
+          <svg class="adressIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path
+              d="M12 12.713l-11.985-9.713h23.971l-11.986 9.713zm-5.425-1.822l-6.575-5.329v12.501l6.575-7.172zm10.85 0l6.575 7.172v-12.501l-6.575 5.329zm-1.557 1.261l-3.868 3.135-3.868-3.135-8.11 8.848h23.956l-8.11-8.848z" />
+          </svg>
+
+          <svg class="adressIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path
+              d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z" />
+          </svg>
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path
+              d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3.445 17.827c-3.684 1.684-9.401-9.43-5.8-11.308l1.053-.519 1.746 3.409-1.042.513c-1.095.587 1.185 5.04 2.305 4.497l1.032-.505 1.76 3.397-1.054.516z" />
+          </svg>
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+          </svg>
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+            <path
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-3 7h-1.924c-.615 0-1.076.252-1.076.889v1.111h3l-.238 3h-2.762v8h-3v-8h-2v-3h2v-1.923c0-2.022 1.064-3.077 3.461-3.077h2.539v3z" />
+          </svg>
+        </div>
+        <div class="info-info">
+          <p>&nbsptechshop@gmail.com</p>
+          <p>Nasa Adresa 3220</p>
+          <p>+38164/ 34 34 34</p>
+          <p>tech shop</p>
+          <p>tech shop</p>
+        </div>
+      </div>
+      <!-- //test end -->
+
+      <div class="kontakt-map">
+        <div class="plane">
+          <svg class="fill" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path
+              d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z" />
+          </svg>
+        </div>
+
+        <div class="contact-form">
+          <div class="contact-title">
+            <p id="kontaktirajte-nas">contact me</p>
+            <h2>if you have any questions please send a message</h2>
+          </div>
+
+          <form id="contact-form" netlify>
+            <input id="input-name" name="name" type="text" class="form-control" placeholder=" " required />
+            <label id="label-name">Your Name</label>
+
+            <input id="input-email" name="emial" type="email" class="form-control" placeholder=" " required />
+            <label id="label-email">Your Email</label>
+            <br />
+            <textarea name="message" class="form-control" placeholder=" " cols="60" rows="10" required></textarea><br />
+            <label id="label-message">Your Message</label>
+
+            <input type="submit" class="form-control submit" value="SEND" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- </div> -->
+  <!-- main content end -->
+
+  <button id="back-to-top-btn">&#10094;</button>
+  <footer>
+    <!--icons-->
+    <!-- <div id="icons-vraper">
         <div class="contactFooter">
           <ul>
             <li>
@@ -965,53 +988,54 @@
           </ul>
         </div>
       </div> -->
-      <!--icons end-->
+    <!--icons end-->
 
-      <!-- work hours-->
-      <div id="proizvodiFooter">
-        <p class="footerTitle">Radno vreme:</p>
-        <p class="followId">PON / SUB - 09 : 17</p>
-        <div class="iconsNew">
-          <p class="followId">Pratie nas na:</p>
-          <a href="https://www.instagram.com/paokpaokpaokpaok/"
-            ><svg class="iconsFillInsta" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
-              <path
-                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
-              />
-            </svg>
-          </a>
-          <a href="#">
-            <svg class="iconsFillFace" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
-              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-3 7h-1.924c-.615 0-1.076.252-1.076.889v1.111h3l-.238 3h-2.762v8h-3v-8h-2v-3h2v-1.923c0-2.022 1.064-3.077 3.461-3.077h2.539v3z" />
-            </svg>
-          </a>
-        </div>
+    <!-- work hours-->
+    <div id="proizvodiFooter">
+      <p class="footerTitle">Radno vreme:</p>
+      <p class="followId">PON / SUB - 09 : 17</p>
+      <div class="iconsNew">
+        <p class="followId">Pratie nas na:</p>
+        <a href="https://www.instagram.com/paokpaokpaokpaok/"><svg class="iconsFillInsta"
+            xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+          </svg>
+        </a>
+        <a href="#">
+          <svg class="iconsFillFace" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+            <path
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-3 7h-1.924c-.615 0-1.076.252-1.076.889v1.111h3l-.238 3h-2.762v8h-3v-8h-2v-3h2v-1.923c0-2.022 1.064-3.077 3.461-3.077h2.539v3z" />
+          </svg>
+        </a>
       </div>
-      <!--work hours end-->
+    </div>
+    <!--work hours end-->
 
-      <!-- mapa -->
-      <div id="mapTxt">
-        <ul>
-          <li>
-            <p class="footerTitle">Gde se nalazimo:</p>
-          </li>
-          <li id="map">
-            <img id="draggable" draggable="true" src="./images/mapa.jpg" />
-          </li>
-        </ul>
-      </div>
-      <!-- mapa end -->
-    </footer>
+    <!-- mapa -->
+    <div id="mapTxt">
+      <ul>
+        <li>
+          <p class="footerTitle">Gde se nalazimo:</p>
+        </li>
+        <li id="map">
+          <img id="draggable" draggable="true" src="./images/mapa.jpg" />
+        </li>
+      </ul>
+    </div>
+    <!-- mapa end -->
+  </footer>
 
-    <p id="copyRight">
-      Copyright &copy;2020 Sva prava zadrzana, TECH SHOP.
-    </p>
+  <p id="copyRight">
+    Copyright &copy;2020 Sva prava zadrzana, TECH SHOP.
+  </p>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./js/show-on-scroll.js"></script>
-    <script src="../assets/owlCarousel/owl.carousel.js"></script>
-    <script src="./js/productSlider.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/show-on-scroll.js"></script>
+  <script src="../assets/owlCarousel/owl.carousel.js"></script>
+  <script src="./js/productSlider.js"></script>
 
-    <script src="./js/topBtn.js"></script>
-  </body>
+  <script src="./js/topBtn.js"></script>
+</body>
+
 </html>
