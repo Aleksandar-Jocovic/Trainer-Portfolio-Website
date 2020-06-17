@@ -111,6 +111,7 @@
 }
  
 .saznajteViseBorder {
+  pointer-events: none;
   position: absolute;
   width: 100px;
   height: 2px;
