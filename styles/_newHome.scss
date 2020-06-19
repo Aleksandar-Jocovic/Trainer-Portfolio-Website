@@ -34,15 +34,18 @@
   max-height: 620px;
   width: 100%;
   height: 100%;
+  border: 35px solid $lightBlueDarken;
   background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
   z-index: 6;
-  background: url('../images/img1.jpg') center center / cover;
+  background: url('../images/img1.jpg');
 }
 
 .full-img-close-button {
   position: absolute;
-  top: -50px;
-  left: -50px;
+  top: -25px;
+  left: -25px;
   background: transparent;
   border: none;
   outline: none;
@@ -469,4 +472,20 @@
       width: fit-content;
     }
   }
+
+  #full-img-outer {
+    padding: 40px 0px;
+  }
+
+  #full-img {
+    width: 100%;
+    height: 80%;
+    border-left: none;
+    border-right: none;
+  }
+  .full-img-close-button {
+  position: absolute;
+  top: -30px;
+  left: 0px;
+}
 }

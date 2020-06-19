@@ -633,6 +633,36 @@ footer {
   background: #2e3944 !important;
 }
 
+#carousel-outer {
+  width: 80%;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  border: 1px solid white;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.carousel-item {
+  width: 170px;
+  height: 150px;
+  margin: 0 10px;
+}
+
+.carousel-item img {
+  width: 100%;
+}
+
 .parent-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1452,15 +1482,18 @@ html {
   max-height: 620px;
   width: 100%;
   height: 100%;
+  border: 35px solid #2e3944;
   background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
   z-index: 6;
-  background: url("../images/img1.jpg") center center/cover;
+  background: url("../images/img1.jpg");
 }
 
 .full-img-close-button {
   position: absolute;
-  top: -50px;
-  left: -50px;
+  top: -25px;
+  left: -25px;
   background: transparent;
   border: none;
   outline: none;
@@ -1969,6 +2002,20 @@ html {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+  }
+  #full-img-outer {
+    padding: 40px 0px;
+  }
+  #full-img {
+    width: 100%;
+    height: 80%;
+    border-left: none;
+    border-right: none;
+  }
+  .full-img-close-button {
+    position: absolute;
+    top: -30px;
+    left: 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */

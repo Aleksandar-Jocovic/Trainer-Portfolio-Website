@@ -77,3 +77,27 @@
 .swiper-pagination-bullet-active {
   background: $lightBlueDarken !important;
 }
+
+//full img carousel
+#carousel-outer {
+  width: 80%;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  border: 1px solid white;
+  overflow: hidden;
+}
+.carousel-inner {
+  display: flex;
+  width: fit-content;
+  transition: 1s ease-in-out;
+}
+
+.carousel-item {
+  width: 170px;
+  height: 150px;
+  margin: 0 10px;
+  img {
+    width: 100%;
+  }
+}

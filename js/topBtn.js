@@ -156,10 +156,15 @@ closeFullImgBtn.addEventListener('click', () => {
 });
 
 // close image on outside click
-fullImgOuter.addEventListener('click', () => {
-  if (fullImgOuter.classList.contains('active-full-img')) {
-    fullImgOuter.classList.remove('active-full-img');
+fullImgOuter.addEventListener('click', (e) => {
+  console.log(e)
+  if (e.target.tagName !== 'BUTTON') {
+
+    if (fullImgOuter.classList.contains('active-full-img')) {
+      fullImgOuter.classList.remove('active-full-img');
+    }
   }
+
 });
 
 function scrollSpy() {
@@ -211,3 +216,40 @@ function scrollSpy() {
 //     },
 //   },
 // });
+
+//gallery carousel 
+
+//get oter width
+const galleryNextBtn = document.getElementById('carousel-next');
+const galleryPrevBtn = document.getElementById('carousel-prev');
+
+const galleryInner = document.querySelector('.carousel-inner');
+const galleryOuter = document.getElementById('carousel-outer');
+
+let moved = 0;
+
+
+
+
+const galleryPrevSlide = () => {
+  const width = galleryOuter.offsetWidth;
+  let moveFor = moved - width;
+  console.log(moveFor)
+
+  galleryInner.style.transform = `translateX(${-moveFor}px)`;
+  moved = moved - width;
+  console.log(moved)
+}
+
+const galleryNextSlide = () => {
+  const width = galleryOuter.offsetWidth;
+  let moveFor = moved + width;
+  console.log(moveFor)
+  galleryInner.style.transform = `translateX(${moveFor}px)`;
+  moved = moved + width;
+  console.log(moved)
+}
+galleryPrevBtn.addEventListener('click', galleryPrevSlide)
+galleryNextBtn.addEventListener('click', galleryNextSlide);
+
+
