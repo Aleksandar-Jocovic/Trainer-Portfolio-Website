@@ -150,22 +150,98 @@ fullImgButtons.forEach((el) => {
   el.addEventListener('click', displayWorkInfo);
 });
 
+// close image on outside click
+// fullImgOuter.addEventListener('click', (e) => {
+//   if (e.target.tagName !== 'BUTTON') {
+//     if (fullImgOuter.classList.contains('active-full-img')) {
+//       fullImgOuter.classList.remove('active-full-img');
+//     }
+//   }
+// });
+
+
+//gallery carousel 
+//get oter width
+const galleryInner = document.querySelector('.carousel-inner');
+const galleryOuter = document.getElementById('carousel-outer');
+
+const galleryNextBtn = document.getElementById('carousel-next');
+const galleryPrevBtn = document.getElementById('carousel-prev');
+let moved = 0;
+
+
+console.log(galleryInner.offsetWidth)
+
+const galleryPrevSlide = () => {
+  const width = galleryOuter.offsetWidth;
+  let moveFor = Math.round(moved + width - (width / 9));
+  console.log(moveFor)
+
+  galleryInner.style.transform = `translateX(${moveFor}px)`;
+  moved = Math.round(moved + width - (width / 9));
+  console.log(moved)
+  checkPosition()
+}
+
+const galleryNextSlide = () => {
+  const width = galleryOuter.offsetWidth;
+  let moveFor = Math.round(moved - width + (width / 9));
+  console.log(moveFor)
+  galleryInner.style.transform = `translateX(${moveFor}px)`;
+  moved = Math.round(moved - width + (width / 9));
+  console.log(moved)
+  checkPosition()
+}
+
+// close gallery
 const closeFullImgBtn = document.querySelector('.full-img-close-button');
 closeFullImgBtn.addEventListener('click', () => {
   fullImgOuter.classList.remove('active-full-img');
+  //reset carousel position
+  galleryInner.style.transform = 'none';
+  moved = 0;
+  galleryPrevBtn.style.pointerEvents = 'none';
+  galleryPrevBtn.style.opacity = '0.3';
 });
 
-// close image on outside click
-fullImgOuter.addEventListener('click', (e) => {
-  console.log(e)
-  if (e.target.tagName !== 'BUTTON') {
-
-    if (fullImgOuter.classList.contains('active-full-img')) {
-      fullImgOuter.classList.remove('active-full-img');
-    }
+const checkPosition = () => {
+  const width = galleryOuter.offsetWidth;
+  const innerWidth = -(galleryInner.offsetWidth - width);
+  if (moved === 0) {
+    galleryPrevBtn.style.pointerEvents = 'none';
+    galleryPrevBtn.style.opacity = '0.3';
+  } else {
+    galleryPrevBtn.style.pointerEvents = 'auto';
+    galleryPrevBtn.style.opacity = '1';
   }
 
-});
+  if (moved <= innerWidth) {
+    galleryNextBtn.style.pointerEvents = 'none';
+    galleryNextBtn.style.opacity = '0.3';
+  } else {
+    galleryNextBtn.style.pointerEvents = 'auto';
+    galleryNextBtn.style.opacity = '1';
+  }
+}
+galleryPrevBtn.addEventListener('click', galleryPrevSlide);
+galleryNextBtn.addEventListener('click', galleryNextSlide);
+
+
+// change zoomed image src
+const allCarouselImages = document.querySelectorAll('.carouserl-image');
+
+const changeZoomImg = (e) => {
+  let imageName = e.target.id;
+  const fullImg = document.getElementById('full-img');
+
+  fullImg.style.background = `url('../images/${imageName}.jpg') center center / cover`;
+
+
+}
+
+allCarouselImages.forEach(item => {
+  item.addEventListener('click', changeZoomImg)
+})
 
 function scrollSpy() {
   const targets = document.querySelectorAll('.itemSpy'),
@@ -190,66 +266,7 @@ function scrollSpy() {
   }
 }
 
-// $('.owl-carousel').owlCarousel({
-//   loop: true,
-//   margin: 10,
-//   nav: true,
-//   items: 6,
-//   autoplay: true,
-//   autoplayTimeout: 8000,
-//   navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
-//   responsive: {
-//     // breakpoint from 0 up
-//     0: {
-//       items: 1,
-//     },
-//     // breakpoint from 480 up
-//     580: {
-//       items: 2,
-//     },
-//     // breakpoint from 768 up
-//     868: {
-//       items: 3,
-//     },
-//     1200: {
-//       items: 4,
-//     },
-//   },
-// });
-
-//gallery carousel 
-
-//get oter width
-const galleryNextBtn = document.getElementById('carousel-next');
-const galleryPrevBtn = document.getElementById('carousel-prev');
-
-const galleryInner = document.querySelector('.carousel-inner');
-const galleryOuter = document.getElementById('carousel-outer');
-
-let moved = 0;
 
 
-
-
-const galleryPrevSlide = () => {
-  const width = galleryOuter.offsetWidth;
-  let moveFor = moved - width;
-  console.log(moveFor)
-
-  galleryInner.style.transform = `translateX(${-moveFor}px)`;
-  moved = moved - width;
-  console.log(moved)
-}
-
-const galleryNextSlide = () => {
-  const width = galleryOuter.offsetWidth;
-  let moveFor = moved + width;
-  console.log(moveFor)
-  galleryInner.style.transform = `translateX(${moveFor}px)`;
-  moved = moved + width;
-  console.log(moved)
-}
-galleryPrevBtn.addEventListener('click', galleryPrevSlide)
-galleryNextBtn.addEventListener('click', galleryNextSlide);
 
 

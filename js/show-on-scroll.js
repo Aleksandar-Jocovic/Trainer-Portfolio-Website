@@ -8,6 +8,8 @@ var titleBorder = document.querySelectorAll('.title-border');
 // var imgB = document.querySelector('.imgB');
 // var imgC = document.querySelector('.imgC');
 
+
+
 function loop() {
 
   elementsToShow.forEach(function (element) {
@@ -27,6 +29,12 @@ function loop() {
     }
   })
 
+  // if (isElementInViewport(firstGlleryImg)) {
+  //   galleryPrevBtn.style.display = 'none';
+  //   console.log('inviwe')
+  // } else {
+  //   galleryPrevBtn.style.display = 'inline-block';
+  // }
   // if (isElementInViewport(imgA)) {
   //   imgA.classList.add('show-on-scroll-img');
   // }
@@ -54,6 +62,4 @@ function isElementInViewport(el) {
     (rect.top >= 0 && rect.bottom - rect.height / 2 <= (window.innerHeight || document.documentElement.clientHeight))
   );
 }
-
-//image galery 
 
